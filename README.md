@@ -1,2 +1,2 @@
 # python-reinforce
-exercise more,learn more
+try to familiar with python, especially its rules.
