@@ -1,0 +1,19 @@
+print('请输入要判断的年份：（例如：1978）')
+year=int(input())
+print('请输入要判断的月份：')
+month=int(input())
+print('请输入要判断的日期：')
+date=int(input())
+
+months=(0,31,59,90,120,151,181,212,243,273,304,334)
+
+if 0<month<12:
+    sums=months[month-1]
+
+sums=sums+date
+
+if year%400==0 or (year%4==0 and year%100!=0):
+   if(month>=3):
+    sums=sums+1
+
+print(sums)
