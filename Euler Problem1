@@ -1,0 +1,36 @@
+Problem1
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.
+
+Solution1:
+import time
+time_begin = time.time()
+
+result = 0
+for i in range(1000):
+	if i%3==0 or i%5==0:
+		result += i
+print(result)
+
+time_end = time.time()
+print time_end - time_begin
+
+
+Solution2:
+import time
+time_begin = time.time()
+
+def DivisionbyN(min,max):
+	return (max+min)*max/min/2
+
+print DivisionbyN(3,999)+DivisionbyN(5,995)-DivisionbyN(15,990)
+
+time_end = time.time()
+print time_end - time_begin
+
+
+
+keypoint:
+1.be familiar with python syntax
+2.Use quick ways to save time
